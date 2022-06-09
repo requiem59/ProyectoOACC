@@ -8,3 +8,9 @@ conexion = pymysql.connect(
 )
 
 cursor = conexion.cursor()
+
+SQL = "INSERT INTO users(nombre, apellido, correo) VALUES('karel', 'pacheco', 'karelpacheco36@aragon.unam.mx')"
+SQL = "INSERT INTO users(nombre, apellido, correo) VALUES('cristian', 'mejia', 'christianmejia10@aragon.unam.mx')"
+cursor.execute(sql)
+
+connection.commit()
