@@ -35,7 +35,7 @@ sql_D = "DELETE FROM libros WHERE libro_id = 26"
 #Ahora se intenta ejecutar el query dentro de un try para capturar errores en caso de que los haya.
 
 try:
-    cursor.execute(sql)
+    cursor.execute(sql)              #Se le ingresa el query declarado en la variable sql
     print("\n-- Query ejecutado correctamente.\n")
     result = cursor.fetchall()
     for row in result:
