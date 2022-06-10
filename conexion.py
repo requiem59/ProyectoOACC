@@ -23,6 +23,15 @@ cursor = conexion.cursor()              #Se crea un cursor para manejar las entr
 
 sql = "SELECT * FROM libros;"           #Se crea una variable que contenga el query a ejecutar en la base de datos.
 
+#CREATE
+sql = "INSERT INTO libros(titulo, autor, año_publicacion, isbn, editorial) VALUES('Ustedes brillan en lo oscuro', 'Liliana Colanzi', 2022, ISBN , 'PÁGINAS DE ESPUMA');"
+
+#READ
+sql = "SELECT * FROM libros;"
+
+#DELETE
+sql = "DELETE FROM libros WHERE libro_id = 26"
+
 #Ahora se intenta ejecutar el query dentro de un try para capturar errores en caso de que los haya.
 
 try:
