@@ -1,3 +1,11 @@
+"""
+Conexión hacía un servicio SQL en localhost
+Creado por:
+  Mejia Mondragón Cristian Alexis
+  Pacheco Ramírez Shai Karel
+  
+"""
+
 import pymysql
 
 try:                                    #Se crea la conexión a la base de datos local dentro de un try para confirmar la conexión.
